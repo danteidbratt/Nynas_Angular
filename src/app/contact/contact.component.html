@@ -1,0 +1,47 @@
+<div class="container-fluid bg-light pt-3 p-md-5">
+  <div class="row">
+    <div class="col-12 col-md-7">
+      <section class="card rounded bg-white border-primary p-4 ml-md-3 mb-5">
+        <header>
+          <h2>Lämna dina synpunkter här!</h2>
+        </header>
+        <form class="card-body">
+          <div class="form-group">
+            <label class="col-12 form-check-label" for="headline_field">Rubrik</label>
+            <input class="col-12 form-control" type="text" id="headline_field" placeholder="Rubrik" maxlength="30">
+          </div>
+          <div class="form-group">
+            <label class="col-12 form-check-label" for="description_field">Beskrivning </label>
+            <textarea class="col-12 form-control" name="description" id="description_field" cols="20" rows="3" maxlength="100"></textarea>
+            <div class="w-100"></div>
+            <small class="col form-text text-muted">Max 100 tecken</small>
+          </div>
+
+          <div class="form-group">
+            <label class="col-12 form-check-label" for="topic_field">Ärende</label>
+            <select class="custom-select" name="topics" id="topic_field">
+              <option value="beach">Strand</option>
+              <option value="camping">Camping</option>
+              <option value="other">Övrigt</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="col-12">Vill du få svar på din synpunkt?</label>
+            <div class="form-check row">
+              <label class="pl-1 pr-1" for="reply-yes">Ja</label>
+              <input class="mr-3" name="reply" type="radio" id="reply-yes" value="yes">
+              <label class="pl-1 pr-1" for="reply-no">Nej</label>
+              <input class="" name="reply" type="radio" id="reply-no" value="no" checked>
+              <label class="col-12" for="email-field">E-Mail</label>
+              <input class="form-control col-11" type="text" placeholder="example@email.com" id="email-field">
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-warning" type="submit">Skicka</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+</div>

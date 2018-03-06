@@ -1,0 +1,57 @@
+<div class="container-fluid bg-light pt-3 p-md-5">
+  <div class="row">
+    <div class="col-md-7 mb-5">
+      <section class="card border-primary ml-md-3 p-1 bg-white">
+        <header class="mt-3 ml-3">
+          <h2>Åker tågen?</h2>
+        </header>
+        <div class="card-body">
+          <form class="form-group ml-3">
+            <div class="row">
+              <label class="form-ckeck-label" for="train-input">Jag åker ifrån ...</label>
+              <input class="form-control" type="text" id="train-input" maxlength=30 placeholder="ex. Stockholm / Norrköping / Södertälje">
+              <button class="btn btn-info mt-3" type="submit" id="train-button">Skicka</button>
+            </div>
+          </form>
+          <table class="table table-striped" id='train-table'>
+
+          </table>
+          <p class="text-secondary"></p>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-5">
+      <section class="card border-primary bg-white mb-5 text-center">
+        <header>
+          <h2 class="m-3">Vädret på Nicksta</h2>
+        </header>
+        <div class="card-body">
+          <table class="table table-striped table-responsive" id='weather-table'>
+            <thead>
+              <th>Klocka</th>
+              <th>Väder</th>
+              <th>Temperatur</th>
+              <th>Vind</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let weatherStamp of weatherData">
+                <td>
+                  {{ weatherStamp.clock }}
+                </td>
+                <td>
+                  {{ weatherStamp.description }}
+                </td>
+                <td>
+                  {{ weatherStamp.temperature }}
+                </td>
+                <td>
+                  {{ weatherStamp.wind }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

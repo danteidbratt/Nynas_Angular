@@ -1,0 +1,37 @@
+<header class="container-header p-4">
+    <div class="text-primary text-center text-md-left ml-md-5 m-2">
+        <h1>Nickstabadet</h1>
+        <p>Ett soligt sommarbad</p>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#nicksta-navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nicksta-navbar">
+        <ul class="navbar-nav ml-md-5">
+            <li class="nav-item active">
+                <a routerLink="home" class="nav-link">Hemma</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="contact" class="nav-link">Kontakt</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="status" class="nav-link">Väder</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="home" class="nav-link">Tillbaks</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="footer text-center pb-5">
+    <p>
+        Vill du veta mer? Skicka e-post till
+        <a href="mailto:asd@123.com">Dante Lundgren</a>
+    </p>
+</footer>
